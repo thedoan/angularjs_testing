@@ -1,0 +1,22 @@
+{
+  "name": "AngularJS Testing",
+  "description": "Testing AngularJS Application, include unit test, e2e test",
+  "main": "index.js",
+  "authors": [
+    "The Doan <dangthedoan@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jasmine": "2.0.0",
+    "angular": "angularjs#1.2.28",
+    "angular-mocks": "1.2.28"
+  }
+}
