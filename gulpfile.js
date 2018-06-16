@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var serveStatic = require('serve-static');
 var serve = serveStatic('./', {'index': ['index.html', 'index.htm']})
-
+//Update driver before protractor 
 gulp.task('webdriver_update', $.protractor.webdriver_update);
 
 gulp.task('connect', function () {
@@ -19,6 +19,7 @@ gulp.task('test', function (done) {
 	karma.start(karmaConf, done);
 });
 
+//e2e test use protactor
 gulp.task('e2e', ['connect', 'webdriver_update'], function ()
 	{
 		gulp.src([])
