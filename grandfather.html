@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Grandfather</title>
+		<link rel="stylesheet" href="css/style.css" media="all">
+		<link rel="stylesheet" href="css/grandfather.css" media="all">
+		<script type="text/javascript" src="bower_components/angular/angular.min.js">
+		</script>
+		<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="src/grandfather.js">
+		</script>
+
+	</head>
+	<body ng-app="GrandfatherOfAllKnowledgeApp" ng-controller="GrandfatherCtrl">
+		<div class="question">
+			<input class="question__field" ng-model="question.text"
+																	placeholder="What would you like to ask Grandfather of all knowledge?">
+			<button class="question__button" ng-click="answerQuestion()"
+																		ng-disabled="!question.text">?</button>
+		</div>
+		<div class="answer">{{answer}}</div>
+	</body>
+
+</html>
+
