@@ -2,6 +2,15 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var serveStatic = require('serve-static');
 var serve = serveStatic('./', {'index': ['index.html', 'index.htm']})
+var browserSync = require('browser-sync').create();
+
+gulp.task('default', [], function() {
+  browserSync.init({
+		server: './'
+	});
+
+	gulp.watch(['src/*.js']).on('change', browserSync.reload);
+});
 //Update driver before protractor 
 gulp.task('webdriver_update', $.protractor.webdriver_update);
 

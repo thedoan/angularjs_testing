@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="chapter3.ui.router">
+	<head>
+		<meta charset="UTF-8">
+		<title>Chapter 04 Testing Controller</title>
+		<script type="text/javascript" src="bower_components/angular/angular.min.js">
+		</script>
+		<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="src/chapter03.js">
+		</script>
+
+	</head>
+	<body>
+		<div ui-view>
+			<button ng-click="loadEmcee(1)">load</button>
+		</div>
+		<script type="text/ng-template" id="home.html"></script>
+		<script type="text/ng-template" id="emcees.html"></script>
+	</body>
+
+</html>
+
